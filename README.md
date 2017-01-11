@@ -51,11 +51,11 @@ ShadowsocksR-libev for OpenWrt
      ./scripts/feeds install zlib libopenssl libpolarssl libmbedtls libpcre
      rm -rf package/feeds/base/mbedtls/patches
    # 获取 shadowsocks-libev Makefile
-   git clone https://github.com/sjtuross/openwrt-shadowsocksr.git package/shadowsocksr-libev
+   git clone https://github.com/sjtuross/openwrt-shadowsocksr.git package/feeds/shadowsocksr-libev
    # 选择要编译的包 Network -> shadowsocks-libev
    make menuconfig
    # 开始编译
-   make package/shadowsocksr-libev/compile V=99
+   make package/feeds/shadowsocksr-libev/compile V=99
    ```
 
 配置
